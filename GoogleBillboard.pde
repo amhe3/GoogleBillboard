@@ -2,7 +2,6 @@ public final static String e = "2.7182818284590452353602874713526624977572470936
 public void setup()  
 {            
     noLoop();
-    String substring(int beginIndex, int endIndex);
     String digits = e.substring(2, 12);
     double dNum = Double.parseDouble(digits);
     
@@ -10,9 +9,9 @@ public void setup()
 public void draw()  
 {   
 	//not needed for this assignment
-	for(int i = 0; i < (e.length-1)/2; i++)
+	for(int i = 3; i < (e.length-1)/2; i++)
 	{
-
+        digits = e.substring(i, 10+i);
 	}
 	System.out.println(dNum);
 }  
